@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+nav h2 {
+    color: #00f5d4;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00f5d4;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+}
+
+.hero-text p {
+    margin: 20px 0;
+    font-size: 1.1rem;
+}
+
+.hero button {
+    padding: 12px 25px;
+    border: none;
+    background: #0ea5a4;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background: #0c8b8a;
+    transform: scale(1.05);
+}
+
+
+.features {
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+    gap: 25px;
+    padding: 60px 20px;
+}
+
+
+.card {
+    background: white;
+    color: black;
+    padding: 30px 40px;
+    border-radius: 12px;
+
+    width: 80%;
+    max-width: 900px;
+
+    text-align: left;
+
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 10px 30px rgba(129, 241, 226, 0.4);
+}
+
+.card h3 {
+    color: #0ea5a4;
+    margin-bottom: 10px;
+}
+
+
+
+.cta {
+    text-align: center;
+    padding: 80px 20px;
+
+  
+    background: rgba(0, 0, 0, 0.6);
+
+    color: white;
+}
+
+
+.cta h2 {
+    margin-bottom: 15px;
+    color: #00f5d4;
+}
+
+
+.cta p {
+    margin: 10px 0;
+    font-size: 1.05rem;
+}
+
+
+.cta p {
+    margin: 10px 0;
+    font-size: 1.05rem;
+}
+
+.cta h2 {
+    margin-bottom: 15px;
+}
+
+
+.cta button {
+    padding: 12px 25px;
+    background: #0ea5a4;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.cta button:hover {
+    background: #0c8b8a;
+    transform: scale(1.05);
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    margin-top: 20px;
+}
+
+.section-title {
+    color: #00f5d4;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}

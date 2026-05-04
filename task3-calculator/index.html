@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app">
+        <div class="calculator">
+            <input type="text" id="display" disabled placeholder="0">
+
+            <div class="buttons">
+                <!-- Scientific row -->
+                <button onclick="appendValue('(')">(</button>
+                <button onclick="appendValue(')')">)</button>
+                <button onclick="appendValue('^')">^</button>
+                <button onclick="appendValue('pi')">π</button>
+
+                <button onclick="appendValue('sin(')">sin</button>
+                <button onclick="appendValue('cos(')">cos</button>
+                <button onclick="appendValue('tan(')">tan</button>
+                <button onclick="appendValue('sqrt(')">√</button>
+
+                <button onclick="appendValue('ln(')">ln</button>
+                <button onclick="appendValue('log(')">log</button>
+                <button onclick="appendValue('e')">e</button>
+                <button onclick="toggleSign()">±</button>
+
+                <!-- Basic calculator -->
+                <button onclick="clearDisplay()">C</button>
+                <button onclick="deleteLast()">DEL</button>
+                <button onclick="appendValue('/')">/</button>
+                <button onclick="appendValue('*')">*</button>
+
+                <button onclick="appendValue('7')">7</button>
+                <button onclick="appendValue('8')">8</button>
+                <button onclick="appendValue('9')">9</button>
+                <button onclick="appendValue('-')">-</button>
+
+                <button onclick="appendValue('4')">4</button>
+                <button onclick="appendValue('5')">5</button>
+                <button onclick="appendValue('6')">6</button>
+                <button onclick="appendValue('+')">+</button>
+
+                <button onclick="appendValue('1')">1</button>
+                <button onclick="appendValue('2')">2</button>
+                <button onclick="appendValue('3')">3</button>
+                <button onclick="calculate()">=</button>
+
+                <button onclick="appendValue('0')" class="zero">0</button>
+                <button onclick="appendValue('.')">.</button>
+                <button onclick="percentage()">%</button>
+                <button onclick="clearHistory()">Clear H</button>
+            </div>
+        </div>
+
+        <aside class="history">
+            <h3>History</h3>
+            <ul id="history-list"></ul>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
